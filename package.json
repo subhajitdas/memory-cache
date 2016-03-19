@@ -1,5 +1,5 @@
 {
-  "name": "memory-cache",
+  "name": "cache-in-memory",
   "version": "1.0.0",
   "description": "A simple in memory cache.",
   "main": "dist/index.js",
@@ -16,7 +16,7 @@
     "cache",
     "in memory"
   ],
-  "author": "Subhajit Das",
+  "author": "Subhajit Das <subhajit@live.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/subhajitdas/memory-cache/issues"
