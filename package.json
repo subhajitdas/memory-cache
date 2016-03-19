@@ -1,0 +1,32 @@
+{
+  "name": "memory-cache",
+  "version": "1.0.0",
+  "description": "A simple in memory cache.",
+  "main": "dist/index.js",
+  "scripts": {
+    "init": "npm install",
+    "test": "mocha dist/test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/subhajitdas/memory-cache.git"
+  },
+  "keywords": [
+    "es6",
+    "cache",
+    "in memory"
+  ],
+  "author": "Subhajit Das",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/subhajitdas/memory-cache/issues"
+  },
+  "homepage": "https://github.com/subhajitdas/memory-cache#readme",
+  "devDependencies": {
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.7.0",
+    "babel-plugin-transform-es2015-spread": "^6.6.5",
+    "should": "^8.2.2",
+    "should-sinon": "0.0.5",
+    "sinon": "^1.17.3"
+  }
+}
