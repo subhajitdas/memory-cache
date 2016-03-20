@@ -4,7 +4,7 @@ A simple in memory cache.
 [![Build Status](https://travis-ci.org/subhajitdas/memory-cache.svg?branch=master)](https://travis-ci.org/subhajitdas/memory-cache)
 
 #Current Version
-1.0.0
+1.0.1
 
 #Install
 
