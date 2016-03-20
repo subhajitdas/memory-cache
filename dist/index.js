@@ -66,7 +66,9 @@ class MemoryCache {
      * If the specified entry does not exist in the cache, a new cache entry is inserted. 
      * If the specified entry already exists, its value is updated.
      * @param {*} key A unique identifier for the cache entry.
-     * @param {*} value The value to store in the cache. 
+     * @param {*} value The value to store in the cache.
+     * @param {Number} expirationTime Milisecounds after which the cache expires.
+     * @param {function} onTimeoutCallback A callback function to notify when the item is removed from cache after timeout. 
      */
     set(key, value, expirationTime, onTimeoutCallback) {
         if (this.contains(key)) {
@@ -90,7 +92,7 @@ class MemoryCache {
      */
     remove(key) {
         let item = this._cacheStore.get(key);
-        if (item.TimeoutCounter) {
+        if (item && item.TimeoutCounter) {
             clearTimeout(item.TimeoutCounter);
         }
         this._cacheStore.delete(key);
